@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>;
 <html lang="en">
 
 <head>
@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- daizy & tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#DCFCF1]">
+<body class="bg-[#DCFCF1] w-[100%]">
     <!-- navbar -->
     <nav class="bg-[#15803D] grid grid-cols-3 w-[100%] h-[91px] items-center">
         <div class="text-white p-3 mx-15 font-semibold text-2xl ">
@@ -32,8 +37,9 @@
     <section class="bg-[#CFF0DC] w-[100%] h-[383px] text-center">
         <div class="flex flex-col items-center p-24 ">
             <h1 class="text-5xl font-bold">Plant a Tree, Grow a Future</h1>
-            <p class="text-[#1F2937] p-2">Join our mission to plant 1 million trees and make the Earth greener for future
-            </br> generations.
+            <p class="text-[#1F2937] p-2">Join our mission to plant 1 million trees and make the Earth greener for
+                future
+                </br> generations.
             </p>
             <button class="bg-[#FACC15] p-1 w-1/8 rounded-2xl">Get Involved</button>
         </div>
@@ -45,10 +51,30 @@
     </section>
 
 
-    <!-- card section -->
+    <!-- cards section -->
 
-    <section id="">
+    <section>
+        <h1 class="text-3xl text-center font-bold mt-20"> Choose Your Trees</h1>
+        <!-- categories, card ,cart section -->
+        <div class="grid grid-cols-12 p-5 gap-5">
+            <!-- categories -->
+            <div id="categories-container" class="col-span-3">
+                <h2 class="p-2 text-2xl">Categories</h2>
+                <button onclick="loadAllPlants(id)"
+                    class="p-5 text-2xl mt-4 rounded-2xl shadow-sm hover:bg-[#15803D] w-[300px] text-start">All Trees </button>
 
+            </div>
+            <!-- card section -->
+            <div id="card-container" class=" w-full  col-span-8 grid grid-cols-3 gap-5 p-5 rounded-2xl">
+                <!-- cards -->
+                
+
+            </div>
+            <!-- cart section -->
+            <div class="bg-emerald-500 col-span-1">
+
+            </div>
+        </div>
     </section>
 
 
